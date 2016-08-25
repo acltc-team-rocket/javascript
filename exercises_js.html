@@ -8,33 +8,90 @@
 </body>
 <script type="text/javascript">  
 
-// var x = "3";
+// for (var i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+// console.log("BLASTOFF!!");
 
-// if (NaN) {
-//   console.log("WAT????");
+// var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
+// var sum = 0;
+// for (var i = 0; i < numbers.length; i++) {
+//   sum = sum + numbers[i];
+// }
+// console.log(sum / numbers.length);
+
+
+// for(var i = 1; i <= 100; i++) {
+//   if (i % 15 === 0) {
+//     console.log("FIZZBUZZ");
+//   } else if (i % 5 === 0) {
+//     console.log("BUZZ");
+//   } else if (i % 3 === 0) {
+//     console.log("FIZZ");
+//   }  else {
+//     console.log(i);
+//   }
 // }
 
-// Math.floor((Math.random() * 10) + 1); // random number 1 to 10
-
-
-
-
-// var i = 0;
-// var text = "";
-// while (i < 10) {
-//   text = text + "The number is " + i;
-//   i++;
+// var x = "elephant";
+// function doSomething() {
+//   var x = "zebra";
+//   console.log(x);
 // }
-// console.log(text);
+// doSomething();
+// console.log(x);
+
+// function saySomething(wordOne, wordTwo) {
+//   console.log(wordOne + wordTwo);
+// }
 
 
-pets = ["dog", "fish", "cat", "iguana", "gorilla"]
+// function Car(model, year, miles) {
+//   this.model = model;
+//   this.year = year;
+//   this.miles =  miles;
+//   this.printMessage = function() {
+//     console.log(this.model + " has done " + this.miles + " miles");
+//   };
+// }
 
-for (var i = 0; i < pets.length; i++) {
-  console.log(pets[i]);
+// var civic = new Car("Civic", 2016, 12500);
+// // console.log(civic.miles);
+// civic.miles = 3234234;
+// civic.purpleHippo = "stuff";
+// console.log(civic.purpleHippo);
+
+// function sum(firstNumber, secondNumber) {
+//   return firstNumber + secondNumber;
+// }
+
+// console.log(sum(3,9));
+
+
+
+// function average(numbers) {
+//   var sum = 0;
+//   for(var i=0; i < numbers.length; i++) {
+//     sum = sum + numbers[i];
+//   }
+//   return sum / numbers.length;
+// }
+
+
+// // average([1, 2, 3]); // return 2
+
+var book = {
+  title: "The Hobbit",
+  author: "George RRRRRR Martin",
+  pages: 37,
+  isbn: 3281740213987342,
+  year: 1492,
+  printDetails: function() {
+    return this.title + " was written by " + this.author + " in the year " + this.year + " and is " + this.pages + " whose isbn is " + this.isbn + "."
+  }
 }
 
-
+book.printDetails();
 
 
 </script>
